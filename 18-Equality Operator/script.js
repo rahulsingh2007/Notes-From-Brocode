@@ -1,0 +1,13 @@
+// =   ASSIGNMENT OPERATOR
+// ==  COMPARISON OPERATOR (COMPARE IF VALUES ARE EQUAL)
+// === STRICT EQUALITY OPERATOR (COMPARE IF VALUES & DATATYPE ARE EQUAL)
+// !=  INEQUALITY OPERATOR
+// !== STRICT INEQUALITY OPERATOR
+
+const PI = 3.14;
+if (PI !== "3.14") {
+    console.log("That is not PI.");
+}
+else {
+    console.log("That is PI.");
+}
