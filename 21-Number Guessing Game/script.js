@@ -18,7 +18,6 @@ while (running) {
         window.alert("Please enter a valid number!")
     }
     else {
-        4
         attempts++;
         if (guess < answer) {
             window.alert("TOO LOW! TRY AGAIN")
@@ -30,5 +29,5 @@ while (running) {
             window.alert(`CORRECT! The answer was ${answer}. It took you ${attempts} attempts.`)
             running = false;
         }
-    }45
+    } 
 }
