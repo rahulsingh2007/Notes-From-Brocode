@@ -17,6 +17,7 @@ console.log(numOfFruits);
 let index = fruits.indexOf("orange")
 console.log(index);
  */
+fruits.sort()
 
 for (let i = 0; i < fruits.length; i++) {
     console.log(fruits[i]);
