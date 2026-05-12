@@ -17,7 +17,7 @@ console.log(numOfFruits);
 let index = fruits.indexOf("orange")
 console.log(index);
  */
-fruits.sort()
+fruits.sort().reverse
 
 for (let i = 0; i < fruits.length; i++) {
     console.log(fruits[i]);
