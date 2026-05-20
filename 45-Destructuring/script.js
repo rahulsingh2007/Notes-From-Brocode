@@ -2,27 +2,26 @@
 //                 [] = TO PERFORM ARRAY DESTRUCTURING
 //                 {} = TO PERFORM OBJECT DESTRUCTUING
 
-// Swap the value of two varibles
+/* // Swap the value of two varibles
 let a = 1;
 let b = 2;
 [a, b] = [b, a];
-console.log(a);
-console.log(b);
+console.log(a, b);
 
 // Swap two varibles in an array
 const colors = ["red", "green", "blue", "black", "white"];
 [colors[0], colors[4]] = [colors[4], colors[0]];
 console.log(colors);
 
-/* // Assign array elements to variables
+// Assign array elements to variables
 const colors = ["red", "green", "blue", "black", "white"];
 const [firstColor, secondColor, thirdColor, ...extraColors] = colors;
 console.log(firstColor);
 console.log(secondColor);
 console.log(thirdColor);
-console.log(extraColors); */
+console.log(extraColors);
 
-/* // Extract values from objects
+// Extract values from objects
 const person1 = {
     firstName: "Rahul",
     lastName: "Singh",
@@ -36,8 +35,7 @@ const person2 = {
 }
 
 const { firstName, lastName, age, job = "Unemployed" } = person2;
-console.log(firstName);
-console.log(lastName);
+console.log(firstName, lastName);
 console.log(age);
 console.log(job); */
 
