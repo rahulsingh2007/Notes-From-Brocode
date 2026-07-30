@@ -1,16 +1,18 @@
-// DEBOUNCING -> When we are performing a action and we don't want anything to occur while doing action but if there is a certain gap or a pause then perform an event in that gap is called debouncing.
+// Throttling -> Throttling is a JavaScript technique that controls how often a function executes within a fixed time interval. 
+// It improves performance by ensuring functions run at a consistent rate during frequent events.
 
-function debounce(fn, delay) {
-    let timer;
+function throttle(fnc, delay) {
+    let timer = 0;
     return function (...args) {
-        clearTimeout(timer);
-        timer = setTimeout(function () {
-            fn(...args);
-        }, delay);
-    };
+        let now = Date.now()
+        if (now - timer >= delay) {
+            timer = now;
+            fnc(...args);
+        }
+    }
 }
 let input = document.querySelector("input");
-input.addEventListener("input", debounce(function () {
+input.addEventListener("input", throttle(function () {
     console.log("Hey");
 }, 1000)
 );
