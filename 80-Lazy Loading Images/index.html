@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading Images - Performance Optimization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Lazy Loading Images with IntersectionObserver</h1>
+    <div class="container">
+        <p>Scroll down to see images load only when they enter the viewport👇</p>
+        <div class="spacer"></div>
+        <img data-src="1.jpg" class="lazy-img" alt="Image 1">
+        <!-- Data-src use is to access the value in javascript -->
+        <div class="spacer"></div>
+        <img data-src="2.jpg" class="lazy-img" alt="Image 2">
+        <div class="spacer"></div>
+        <img data-src="3.jpg" class="lazy-img" alt="Image 3">
+        <div class="spacer"></div>
+        <img data-src="4.jpg" class="lazy-img" alt="Image 4">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
